@@ -1,0 +1,14 @@
+# Fichiers de variables d'environnement et secrets
+.env
+*.pem
+*.key
+id_rsa*
+
+# Terraform (si tu en utilises)
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Fichiers systèmes ou logs
+*.log
+.DS_Store
