@@ -12,3 +12,10 @@ id_rsa*
 # Fichiers systèmes ou logs
 *.log
 .DS_Store
+
+# PDFs et docs lourds
+*.pdf
+
+# fichiers temp dnsmasq
+*.leases
+*.pid
