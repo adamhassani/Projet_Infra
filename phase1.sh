@@ -100,4 +100,10 @@ ip netns exec PC2 ip addr add 192.168.200.20/24 dev eth0
 ip netns exec PC3 ip addr add 192.168.100.30/24 dev eth0
 ip netns exec PC4 ip addr add 192.168.200.40/24 dev eth0
 
+
+
+ip netns exec R1 ip link add link eth1 name eth1.100 type vlan id 100
+ip netns exec R1 ip link set dev eth1.100 up
+ip netns exec R1 ip addr add 192.168.100.254/24 dev eth1.100
+
 echo "=== Phase 1 OK ==="
